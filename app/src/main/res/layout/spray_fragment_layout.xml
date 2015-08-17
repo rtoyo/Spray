@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_background">
+
+    <ProgressBar
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_gravity="center"
+        android:id="@+id/spray_progress_bar"
+        android:visibility="invisible" />
+    <!--<com.skyfishjy.library.RippleBackground-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/cool_progress_bar"-->
+        <!--app:rb_color="#0099CC"-->
+        <!--app:rb_radius="100dp"-->
+        <!--app:rb_rippleAmount="4"-->
+        <!--app:rb_duration="3000"-->
+        <!--app:rb_scale="6"-->
+        <!-->-->
+        <!--<ImageView-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="64dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/centerImage"-->
+            <!--android:src="@drawable/logo_final"/>-->
+    <!--</com.skyfishjy.library.RippleBackground>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="96dp"
+        android:id="@+id/spray_scroll_view"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spray_users_linear_layout"></LinearLayout>
+    </HorizontalScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="41dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/imageView2"
+                android:background="@drawable/location_icon29"
+                android:layout_gravity="center|right"
+                android:layout_marginLeft="96dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="My location"
+                android:textSize="15dp"
+                android:id="@+id/location_text_view_id"
+                android:layout_above="@+id/button2"
+                android:layout_alignStart="@+id/close_users_text_view"
+                android:textColor="@color/sprayPink"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/world_icon29"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp" />
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0 people around you"
+            android:id="@+id/close_users_text_view"
+            android:textSize="15dp"
+            android:layout_above="@+id/button2"
+            android:layout_alignEnd="@+id/testBTtextView"
+                android:textColor="@color/sprayPink"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" />
+
+        <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="3 New Items"
+        android:id="@+id/button2"
+        android:textColor="#ffffffff"
+        android:background="@drawable/pink_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Spray"
+        android:id="@+id/spray_to_button"
+        android:textColor="#ffffffff"
+        android:background="@drawable/pink_button"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/cellular_cell_button"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Scan"
+            android:id="@+id/scan_button"
+            android:gravity="center"
+            android:layout_below="@+id/spray_to_button"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+                android:background="@drawable/pink_button"
+                android:textColor="#ffffffff"
+                android:layout_marginTop="5dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
